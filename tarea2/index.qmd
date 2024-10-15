@@ -1,0 +1,43 @@
+---
+title: "Reflexión sobre el proceso de despliegue"
+author: "Rosaelena Muñoz Ugalde"
+date: "2024-10-14"
+categories: [Despliegue, Reflexión, Blog]
+format: html
+---
+
+# Confirmación de haber completado todos los pasos de la guía
+
+El proceso de despliegue fue realizado siguiendo la guía proporcionada, donde se completaron todas las etapas indicadas. Las pruebas realizadas incluyeron: 
+
+- **Conexión a la base de datos:** Confirmación de la conexión exitosa utilizando credenciales válidas.  
+- **Operaciones CRUD:** Cada operación (crear, leer, actualizar y eliminar) fue probada para garantizar la integridad de los datos.  
+- **Integración con GitHub:** Subida del código al repositorio sin problemas utilizando la interfaz gráfica.  
+- **Despliegue final:** Verificación de que el sistema funciona de manera correcta en el entorno de producción.  
+
+Todas las pruebas se realizaron utilizando datos de prueba específicos, y se verificó que los resultados fueran consistentes con las expectativas.
+
+# Desafíos encontrados y cómo se superaron
+
+1. **Conexión a la base de datos:** Inicialmente hubo un problema con la configuración del `connection string`. Esto se solucionó ajustando los parámetros según las instrucciones de la documentación oficial.
+
+2. **Subida a GitHub:** Encontré dificultades utilizando la terminal para subir los archivos. Opté por usar la interfaz gráfica de GitHub, lo que facilitó la tarea sin perder tiempo.
+
+3. **Errores en operaciones CRUD:** Durante las primeras pruebas, las consultas `update` no se ejecutaban correctamente. Tras revisar el código, noté que los identificadores únicos no coincidían con los registros esperados. Añadí mensajes de error más específicos para facilitar la depuración.
+
+4. **Inconsistencia en entornos de desarrollo y producción:** Se presentó una diferencia entre las dependencias del entorno local y las del entorno en la nube. Esto se resolvió utilizando `pip freeze` para asegurar que las versiones fueran las mismas en ambos entornos.
+
+# Reflexión sobre lo aprendido
+
+Este proceso me permitió reforzar varias habilidades clave:  
+
+- **Documentación y depuración:** Aprendí la importancia de leer cuidadosamente la documentación y agregar mensajes claros al código.  
+- **Manejo de GitHub:** Ahora me siento más cómoda utilizando tanto la terminal como la interfaz gráfica.  
+- **Operaciones con bases de datos:** Entendí mejor cómo gestionar conexiones y evitar errores comunes en las operaciones CRUD.
+- **Despliegue y gestión de entornos:** La experiencia me enseñó a cuidar la consistencia entre entornos para evitar problemas inesperados.
+
+En general, esta experiencia fue enriquecedora y me permitió consolidar competencias que aplico en proyectos profesionales. 
+
+---
+
+
